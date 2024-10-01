@@ -48,6 +48,8 @@ img {
 
 body {
     font-size: 100%;
+    background-image: url(img/bgimg2.jpg);
+    background-size: 100%;
 }
 
 
