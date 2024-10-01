@@ -246,3 +246,15 @@ section {
 }
 
 
+.menulist {
+    display: flex;
+    margin-bottom: 4%;
+    list-style: none;
+
+}
+
+
+.listinside {
+    padding: 10px 20px;
+    text-decoration: none;
+}
