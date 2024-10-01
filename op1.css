@@ -210,6 +210,8 @@ section {
     gap: 20px; 
     border-bottom: 1px solid black;
     padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
