@@ -46,11 +46,6 @@ img {
 
 
 
-body {
-    font-size: 100%;
-    background-image: url(img/bgimg2.jpg);
-    background-size: 100%;
-}
 
 
 .artmain {
@@ -113,7 +108,7 @@ p {
     margin-left: 33%;
     margin-top: 5%;
     margin-bottom: 5%;
-    
+
 }
 
 
@@ -206,24 +201,36 @@ section {
 
 .spanmenu {
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
     border-bottom: 1px solid black;
     padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+}
+
+.menubutton {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid black;
+    padding: 0px;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 
 .menu-btn {
-    text-decoration: none; 
-    border: 1px solid darkgray; 
-    color: black; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
+    text-decoration: none;
+    border: 1px solid darkgray;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 16px;
     font-family: Arial, sans-serif;
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
 }
 
 
@@ -234,15 +241,16 @@ section {
 
 
 .menu-drk {
-    text-decoration: none; 
-    border: 1px solid gray; 
+    text-decoration: none;
+    border: 1px solid gray;
     background-color: grey;
-    color: white; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 16px;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s;
+    margin-top: -10%;
 }
 
 
@@ -257,4 +265,91 @@ section {
 .listinside {
     padding: 10px 20px;
     text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+button:hover {
+    background-color: #555;
+}
+
+body.dark-mode {
+    background-image: url(img/darkbg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+button.dark-mode {
+    background-color: #ffcc00;
+    color: black;
+}
+
+button.dark-mode:hover {
+    background-color: #ff9900;
+}
+
+body {
+    font-size: 100%;
+    background-image: url(img/bgimg2.jpg);
+    background-size: cover;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 1s, color 1s;
+    background-position: center;
+    transition: background-image 1s;
+}
+
+
+article {
+    transition: 1s;
+}
+
+article.dark-mode {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.menu a.dark-mode {
+    background-color: #ffcc00;
+    color: black;
+    border: #ffcc00;
+}
+
+.menu a.dark-mode:hover {
+    background-color: #ff9900;
 }
